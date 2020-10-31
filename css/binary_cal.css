@@ -1,5 +1,8 @@
 body{
-  width: 33%;
+  position: absolute;
+  width: 50%;
+  bottom:50%;
+  left: 25%;
 }
 
 #res{
