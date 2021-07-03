@@ -11,22 +11,26 @@
 
     <style> 
     #click1{
-       position: absolute;
-       height: 35px;
-       top: 40%;
-       left: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
        background-color:transparent;
        font-size: 15px;
        font-family: monospace, Times, serif;
        font-weight: bold;
       
-    }  
+    }
     #click{
-       position: absolute;
+        position: absolute;
        top: 49%;
        left: 45%;
        background-color:transparent;
        font-family: monospace;
+      
+    }
+    #v{
+        border: black;
     }
     body{
         background:white;
@@ -43,11 +47,16 @@
     
     <button style="background-color:slategray;" id="default">Default</button>
     
-    <p style="text-align: center;">
-        <button type="button" class="badge rounded-pill bg-info text-dark" id="click1">Hello, hope you are doing great..!</button>
-    </p>
+    <div id="click1" >
+        <button id="v"  type="button" class="badge rounded-pill bg-info text-dark">Hello, hope you are doing great..!</button>
+    </div> 
+  
+        <button type="button" id="click">Click Me</button>
+
+        
+    
    
-    <button type="button" id="click">Click Me</button>
+    
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
